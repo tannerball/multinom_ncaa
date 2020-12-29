@@ -19,7 +19,7 @@ library(tidyverse)
 # we will try to use multinomial logistic regression to predict how far a team will go in the ncaa tournament.
 # we will use the stats in data4, which we've previously determined to all be significant (with the exception of Games Played (G)), as well as some variables that will serve as context later, but not be part of the model.
 
-data <- read.csv("cbb.csv")
+data <- read.csv("cbb.csv") # data originally acquired from https://www.kaggle.com/andrewsundberg/college-basketball-dataset
 ncaa_data <- data[c(1, 3:13, 15, 20:22, 24)]
 
 # we're also going to only look at teams that made the tournament, because the sheer number of non-tournament teams could throw things off.
